@@ -1,0 +1,598 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="772,4984.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ufa="clr-namespace:UiPath.Form.Activities;assembly=UiPath.Form.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="58">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Form.Activities</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Form.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap:VirtualizedContainerService.HintSize="628,4880" sap2010:WorkflowViewState.IdRef="Sequence_13">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="centralCADUSD" />
+      <Variable x:TypeArguments="x:String" Name="centralUSDCAD" />
+      <Variable x:TypeArguments="x:String" Name="TD_SELL_CAD" />
+      <Variable x:TypeArguments="x:String" Name="TD_BUY_CAD" />
+      <Variable x:TypeArguments="x:String" Name="RBC_SELL_CAD" />
+      <Variable x:TypeArguments="x:String" Name="RBC_BUY_CAD" />
+      <Variable x:TypeArguments="x:String" Name="SCOT_SELL_CAD" />
+      <Variable x:TypeArguments="x:String" Name="SCOT_BUY_CAD" />
+      <Variable x:TypeArguments="x:String" Name="BMO_SELL_CAD" />
+      <Variable x:TypeArguments="x:String" Name="BMO_BUY_CAD" />
+      <Variable x:TypeArguments="x:String" Name="NBC_BUY_CAD" />
+      <Variable x:TypeArguments="x:String" Name="NBC_SELL_CAD" />
+      <Variable x:TypeArguments="scg:List(x:Decimal)" Name="sellrates" />
+      <Variable x:TypeArguments="scg:List(x:Decimal)" Name="buyrates" />
+      <Variable x:TypeArguments="x:Decimal" Name="lowestSell" />
+      <Variable x:TypeArguments="x:Decimal" Name="highestBuy" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="bankNames">
+        <Variable.Default>
+          <mva:VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new List(Of String)(new String(){&quot;TD Bank&quot;, &quot;Royal Bank of Canada&quot;, &quot;ScotiaBank&quot;, &quot;Bank of Montreal&quot;, &quot;National Bank of Canada&quot;})" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="lowestSellBank" />
+      <Variable x:TypeArguments="x:String" Name="highestBuyBank" />
+      <Variable x:TypeArguments="x:String" Name="lowestSellStr" />
+      <Variable x:TypeArguments="x:String" Name="highestBuyStr" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormFieldsOutputData="{x:Null}" FormTitle="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="bdbd40ad-dbaf-466d-888c-167b956ce1d2" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" FormHeight="720" FormSchema="%[{&quot;tag&quot;:&quot;h1&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Exchange Rates, USD - CAD&quot;,&quot;key&quot;:&quot;label&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h4&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;When you click the button you will get exchange rates between CAD and USD. &quot;,&quot;key&quot;:&quot;label1&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label2&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h2&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Central Bank of Canada, Current Market Exchange Rates:\n&quot;,&quot;key&quot;:&quot;label3&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label4&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;TD Bank Rates:\n&quot;,&quot;key&quot;:&quot;label5&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label6&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Royal Bank of Canada Rates:&quot;,&quot;key&quot;:&quot;label7&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label8&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Scotiabank Rates:&quot;,&quot;key&quot;:&quot;label9&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label10&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Bank of Montreal Rates:\n&quot;,&quot;key&quot;:&quot;label11&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label12&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;National Bank of Canada Rates:\n&quot;,&quot;key&quot;:&quot;label13&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label16&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Best Bank for Buying and Selling CAD:&quot;,&quot;key&quot;:&quot;label15&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label14&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;label&quot;:&quot;Get Current Rates&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;getCurrentRates&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;input&quot;:true,&quot;type&quot;:&quot;button&quot;,&quot;isResetData&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100240&quot;,&quot;Name&quot;:&quot;Slate&quot;,&quot;BaseCss&quot;:&quot;../../assets/css/themes/slate.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;../../assets/themeicons/slate.png&quot;,&quot;OverrideCssUrl&quot;:&quot;&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="1170" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="586.4,3736" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="False" StartAsMinimized="False">
+      <ufa:FormActivity.Body>
+        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="549.6,3609.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Backend" sap:VirtualizedContainerService.HintSize="508,3516.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="baseAPI" />
+                <Variable x:TypeArguments="x:String" Name="valetCADUSD" />
+                <Variable x:TypeArguments="x:String" Name="valetUSDCAD" />
+                <Variable x:TypeArguments="njl:JObject" Name="jsonCADUSD" />
+                <Variable x:TypeArguments="njl:JObject" Name="jsonUSDCAD" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="API" sap:VirtualizedContainerService.HintSize="466.4,677.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[baseAPI]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">www.bankofcanada.ca/valet</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" BodyFormat="application/xml" DisplayName="HTTP Request CAD USD" EnableSSLVerification="True" EndPoint="http://www.bankofcanada.ca/valet/observations/FXCADUSD?recent=1" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="HttpClient_5" Method="GET" Result="[valetCADUSD]" TimeoutMS="6000">
+                  <ui:HttpClient.Attachments>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Attachments>
+                  <ui:HttpClient.Cookies>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Cookies>
+                  <ui:HttpClient.Headers>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Headers>
+                  <ui:HttpClient.Parameters>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Parameters>
+                  <ui:HttpClient.UrlSegments>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.UrlSegments>
+                </ui:HttpClient>
+                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" BodyFormat="application/xml" DisplayName="HTTP Request USD CAD" EnableSSLVerification="True" EndPoint="http://www.bankofcanada.ca/valet/observations/FXUSDCAD?recent=1" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="HttpClient_6" Method="GET" Result="[valetUSDCAD]" TimeoutMS="6000">
+                  <ui:HttpClient.Attachments>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Attachments>
+                  <ui:HttpClient.Cookies>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Cookies>
+                  <ui:HttpClient.Headers>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Headers>
+                  <ui:HttpClient.Parameters>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.Parameters>
+                  <ui:HttpClient.UrlSegments>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </ui:HttpClient.UrlSegments>
+                </ui:HttpClient>
+                <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_5" JsonObject="[jsonCADUSD]" JsonString="[valetCADUSD]" />
+                <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[centralCADUSD]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[jsonCADUSD("observations").item(0).Item("FXCADUSD").Item("v").ToString]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_6" JsonObject="[jsonUSDCAD]" JsonString="[valetUSDCAD]" />
+                <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[centralUSDCAD]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[jsonUSDCAD("observations").item(0).Item("FXUSDCAD").Item("v").ToString]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+              <ui:OpenBrowser CommunicationMethod="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" Hidden="True" sap:VirtualizedContainerService.HintSize="466.4,2706.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="https://www.td.com/ca/en/personal-banking/solutions/exchange/currency-converter/#/fxcalculator">
+                <ui:OpenBrowser.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,2604" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="61497bd0-3a5d-4544-bb69-54a303bb5606" InformativeScreenshot="81ffc5112a58a98be240e26185dc2f98" Selector="&lt;webctrl parentid='Tab_Cash' tag='SPAN' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'STRONG'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_26">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="59990ee9-2c8c-4cc3-a131-14cea15fedc0" InformativeScreenshot="acf088435488b52bccd0db8a99b0f109" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;td-fx-embedded-calculator&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;td-fx-cash-calculator&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;span&amp;gt;strong' parentid='tabsCarousel0_tab1' tag='STRONG' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[TD_SELL_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayMS="4000" DisplayName="Type Into 'SELECT  selectcashfromc...'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="True" Text="US">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9119ad98-af02-4e8e-bc49-6a1457c60345" InformativeScreenshot="69bd87652baa9a7cc1e90208af1e76bd" Selector="&lt;webctrl id='selectcashfromcurrency' tag='SELECT' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'STRONG'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_27">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7e46b723-6612-4bb6-9465-81907a949f3e" InformativeScreenshot="df903a56f107cc255a44459d8374fbe6" Selector="&lt;webctrl idx='1' parentid='tabsCarousel0_tab1' tag='STRONG' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[TD_BUY_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="NavigateTo_9" Url="https://online.royalbank.com/cgi-bin/tools/foreign-exchange-calculator/start.cgi" />
+                      <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DelayMS="2000" DisplayName="Click 'IMG  cash-switch-horz'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d3e7d280-076f-43b6-a2a9-39b2834374f1" InformativeScreenshot="6dac6842ce14788c9d514aeb250630e5" Selector="&lt;webctrl id='cash-switch-horz' tag='IMG' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN  noncash-currencyH...'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_36">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0e52016e-2803-4ad5-a17c-3a30b533d4d3" InformativeScreenshot="c88fe20102b89e0de73e6e4b546341b7" Selector="&lt;webctrl id='noncash-currencyHaveRate' tag='SPAN' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[RBC_BUY_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1500" DisplayName="Click 'IMG  cash-switch-horz'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d3e7d280-076f-43b6-a2a9-39b2834374f1" InformativeScreenshot="6dac6842ce14788c9d514aeb250630e5" Selector="&lt;webctrl id='cash-switch-horz' tag='IMG' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN  noncash-currencyW...'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_37">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cd5e2839-03c6-4203-9f02-ce403e5e920c" InformativeScreenshot="d606817e3dd1db67ffecc524e157b0c3" Selector="&lt;webctrl id='noncash-currencyWantRate' tag='SPAN' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[RBC_SELL_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="NavigateTo_10" Url="https://www.scotiabank.com/ca/en/personal/rates-prices/foreign-exchange-rates.html" />
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_30">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a3b1c31f-d984-4a97-ab9f-cac2754daa86" InformativeScreenshot="5d3321ce42f03cac0a890b1d3ba93b46" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='1' tableCol='4' tag='TD' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[SCOT_BUY_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_31">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5436207-f55d-4a09-acfb-394cc1b05ba9" InformativeScreenshot="6a3af78a1db8151d9ae5004e6b7e6b40" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='1' tableCol='3' tag='TD' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[SCOT_SELL_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="NavigateTo_11" Url="https://www.bmo.com/home/personal/banking/rates/foreign-exchange" />
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_32">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="203481b3-b0b8-4a50-906b-18beb825172e" InformativeScreenshot="8e2778f2fea1f0156a05cb4b7e2d69ab" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='1' tableCol='3' tag='TD' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[BMO_BUY_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_33">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1623f4cd-c854-4151-adf5-5f58c0d8b42d" InformativeScreenshot="78456f956547575ef410521a744cf911" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='1' tableCol='4' tag='TD' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[BMO_SELL_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="NavigateTo_12" Url="https://www.nbc.ca/en/rates-and-analysis/interest-rates-and-returns/exchange-rates.html" />
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_34">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c02d73c2-bc35-4f38-9547-dcfe7bf8cfd2" InformativeScreenshot="e53b10a5e73fae129e880c74fd6dbcd4" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='1' isleaf='1' tableCol='3' tag='TD' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[NBC_BUY_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_35">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d3edcd71-4c6f-45a0-a897-6c5de812e89f" InformativeScreenshot="130cc1d8bfddf4db4b2b476dfcfb7ac1" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl idx='1' isleaf='1' tableCol='4' tag='TD' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[NBC_SELL_CAD]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="CloseTab_3" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:OpenBrowser.Body>
+              </ui:OpenBrowser>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ufa:FormActivity.Body>
+      <ufa:FormActivity.DelayBody>
+        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+          <Delay Duration="00:00:00.2500000" sap2010:WorkflowViewState.IdRef="Delay_1" />
+        </ActivityAction>
+      </ufa:FormActivity.DelayBody>
+      <ufa:FormActivity.FormFieldsCollection>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ufa:FormActivity.FormFieldsCollection>
+    </ufa:FormActivity>
+    <Assign sap:VirtualizedContainerService.HintSize="586.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Decimal)">[sellrates]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Decimal)">[new List(Of Decimal)(new Decimal(){Convert.ToDecimal(TD_SELL_CAD), Convert.ToDecimal(RBC_SELL_CAD), Convert.ToDecimal(SCOT_SELL_CAD), Convert.ToDecimal(BMO_SELL_CAD), Convert.ToDecimal(NBC_SELL_CAD)})]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="586.4,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Decimal">[lowestSell]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Decimal">[sellrates.Min()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="586.4,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:Decimal)">[buyrates]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:Decimal)">[new List(Of Decimal)(new Decimal(){Convert.ToDecimal(TD_BUY_CAD), Convert.ToDecimal(RBC_BUY_CAD), Convert.ToDecimal(SCOT_BUY_CAD), Convert.ToDecimal(BMO_BUY_CAD), Convert.ToDecimal(NBC_BUY_CAD)})]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="586.4,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Decimal">[highestBuy]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Decimal">[buyrates.Max()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="586.4,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[lowestSellBank]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[bankNames(sellrates.IndexOf(lowestSell))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="586.4,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[highestBuyBank]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[bankNames(buyrates.IndexOf(highestBuy))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="586.4,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[lowestSellStr]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[lowestSell.ToString + " at " + lowestSellBank]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="586.4,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[highestBuyStr]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[highestBuy.ToString +" at " +highestBuyBank]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormFieldsOutputData="{x:Null}" FormTitle="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="bdbd40ad-dbaf-466d-888c-167b956ce1d2" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" FormHeight="720" FormSchema="%[{&quot;tag&quot;:&quot;h1&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Exchange Rates, USD - CAD&quot;,&quot;key&quot;:&quot;label&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;tag&quot;:&quot;h2&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Central Bank of Canada, Current Market Exchange Rates:\n&quot;,&quot;key&quot;:&quot;label3&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label2&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;label&quot;:&quot;Central Bank USD-CAD rate&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is the approximate market value of the US dollar against the Canadian dollar according to the Central Bank of Canada.&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;centralUSDCAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;TD Bank Rates:\n&quot;,&quot;key&quot;:&quot;label5&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;label&quot;:&quot;TD Sell&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much you will pay to the bank in CAD to get USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;TD_SELL_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;TD Buy&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much the bank will pay you in CAD for USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;TD_BUY_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Royal Bank of Canada Rates:&quot;,&quot;key&quot;:&quot;label7&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;label&quot;:&quot;RBC Sell&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much you will pay to the bank in CAD to get USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;RBC_SELL_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;RBC Buy&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much the bank will pay you in CAD for USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;RBC_BUY_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Scotiabank Rates:&quot;,&quot;key&quot;:&quot;label9&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;refreshOnChange&quot;:true,&quot;key&quot;:&quot;label10&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;label&quot;:&quot;Scotiabank Sell&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much you will pay to the bank in CAD to get USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;SCOT_SELL_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Scotiabank Buy&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much the bank will pay you in CAD for USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;SCOT_BUY_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Bank of Montreal Rates:\n&quot;,&quot;key&quot;:&quot;label11&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;label&quot;:&quot;BMO Sell&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much you will pay to the bank in CAD to get USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;BMO_SELL_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;BMO Buy&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much the bank will pay you in CAD for USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;BMO_BUY_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;tag&quot;:&quot;h3&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;National Bank of Canada Rates:\n&quot;,&quot;key&quot;:&quot;label13&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;label&quot;:&quot;NBC Sell&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much you will pay to the bank in CAD to get USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;NBC_SELL_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;NBC Buy&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;tooltip&quot;:&quot;This is how much the bank will pay you in CAD for USD&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;NBC_BUY_CAD&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;tag&quot;:&quot;h2&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Best Bank for Buying and Selling CAD:&quot;,&quot;key&quot;:&quot;label1&quot;,&quot;input&quot;:false,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;type&quot;:&quot;label&quot;},{&quot;label&quot;:&quot;Buying CAD with USD&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;highestBuyStr&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Buying USD with CAD&quot;,&quot;labelPosition&quot;:&quot;left-left&quot;,&quot;disabled&quot;:true,&quot;tableView&quot;:true,&quot;key&quot;:&quot;lowestSellStr&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Close Window&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;getCurrentRates&quot;,&quot;custom&quot;:&quot;instance.emit('executeDoBlock', instance.component);&quot;,&quot;input&quot;:true,&quot;type&quot;:&quot;button&quot;,&quot;isResetData&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100240&quot;,&quot;Name&quot;:&quot;Slate&quot;,&quot;BaseCss&quot;:&quot;../../assets/css/themes/slate.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;../../assets/themeicons/slate.png&quot;,&quot;OverrideCssUrl&quot;:&quot;&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="1170" GenerateInputFields="False" sap:VirtualizedContainerService.HintSize="586.4,211.2" sap2010:WorkflowViewState.IdRef="FormActivity_2" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="False" StartAsMinimized="False">
+      <ufa:FormActivity.Body>
+        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </ufa:FormActivity.Body>
+      <ufa:FormActivity.DelayBody>
+        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+          <Delay Duration="00:00:00.2500000" sap2010:WorkflowViewState.IdRef="Delay_2" />
+        </ActivityAction>
+      </ufa:FormActivity.DelayBody>
+      <ufa:FormActivity.FormFieldsCollection>
+        <InArgument x:TypeArguments="x:String" x:Key="TD_SELL_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TD_SELL_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="TD_BUY_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TD_BUY_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="RBC_SELL_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RBC_SELL_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="RBC_BUY_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RBC_BUY_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="SCOT_SELL_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="SCOT_SELL_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="SCOT_BUY_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="SCOT_BUY_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="BMO_SELL_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="BMO_SELL_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="BMO_BUY_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="BMO_BUY_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="NBC_SELL_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NBC_SELL_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="NBC_BUY_CAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NBC_BUY_CAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="centralUSDCAD">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="centralUSDCAD" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="lowestSellBank">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="lowestSellBank" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="highestBuyBank">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="highestBuyBank" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="highestBuyStr">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="highestBuyStr" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="lowestSellStr">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="lowestSellStr" />
+        </InArgument>
+      </ufa:FormActivity.FormFieldsCollection>
+    </ufa:FormActivity>
+  </Sequence>
+</Activity>
